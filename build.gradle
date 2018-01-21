@@ -1,7 +1,13 @@
 group 'com.nastusenka'
-version '1.0-SNAPSHOT'
+version '1.0'
 
 apply plugin: 'java'
+
+jar {
+    manifest {
+        attributes 'Main-class': 'com.nastusenka.weekdaycounter.WeekdayCounterApp'
+    }
+}
 
 sourceCompatibility = 1.8
 
