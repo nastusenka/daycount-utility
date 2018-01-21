@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/nastusenka/weekday-counter.svg?branch=master)](https://travis-ci.org/nastusenka/weekday-counter)
+
 # Weekday counter
 Dieses Java-Programm erhält zwei Zeitpunkte als Eingabe und rechnet aller Sonntage zwischen diesen beiden Zeitpunkten, die auf den ersten Tag eines Monats fallen.
 
