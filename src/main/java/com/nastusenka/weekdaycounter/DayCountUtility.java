@@ -12,6 +12,13 @@ public class DayCountUtility {
     private LocalDate initialDate;
     private LocalDate finalDate;
 
+    /**
+     * Constructor with parameters validation
+     *
+     * @param firstParam Date in format YYYY-MM-DD
+     * @param secondParam Date in format YYYY-MM-DD
+     * @throws InvalidDateException when date is invalid
+     */
     public DayCountUtility(String firstParam, String secondParam) throws InvalidDateException {
         firstParam = firstParam.trim();
         secondParam = secondParam.trim();
@@ -32,6 +39,11 @@ public class DayCountUtility {
         }
     }
 
+    /**
+     * Counts number of Sundays which are the first day of the month
+     *
+     * @return Number of days
+     */
     public int countSundays() {
         LocalDate date = initialDate;
         if (initialDate.getDayOfMonth() != 1) {
